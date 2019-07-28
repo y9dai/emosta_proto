@@ -10,7 +10,10 @@
   {% for path in images %}
     <div>
       <img src="images/{{ path }}" style="margin-top: 10px; vertical-align: bottom; width: 200px;">
-      {{ path }}
+      {% for poem in poems %}
+        <br> # {{ poem }}
+      {% endfor %}
+      {{ text }}
     </div>
   {% endfor %}
 {% endif %}
